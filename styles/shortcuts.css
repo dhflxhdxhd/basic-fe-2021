@@ -1,1 +1,32 @@
 @import "reset.css";
+
+body{
+    box-sizing: border-box;
+}
+header{
+    margin: 1vh;
+}
+
+.css-video{
+    margin: 1vh;
+}
+table{
+    border-collapse: collapse;
+    height: 80vh;
+    margin: 1vh;
+}
+
+th, td {
+    border:1px solid black;
+}
+
+td{
+    padding: 1em;
+}
+.css-name{
+    height: 10%;
+    background-color: aliceblue;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
