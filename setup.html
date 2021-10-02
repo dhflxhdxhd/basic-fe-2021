@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>IntelliJ setup</title>
+    <link rel="stylesheet" href="./styles/setup.css">
 </head>
 <body>
 <header>
@@ -14,7 +15,7 @@
 
 <!--목차-->
 <nav>
-    <ol>
+    <ol class="css-list">
         <li><a href="#list1">인증 페이지 접속</a>
             <ul>
                 <li><a href="#list1.1">JetBrains 사이트 접속</a></li>
@@ -37,80 +38,86 @@
 </nav>
 
 <section>
-    <h2>인증 페이지 접속</h2>
-    <ol>
-        <li>JetBrains 사이트 접속
-        <ul>
-            <li>
-                다음 링크를 통해 JetBrains 사이트에 접속한다.
-                <p><a href="https://www.jetbrains.com/community/education/#students">https://www.jetbrains.com/community/education/#students</a></p>
-                <img src="./img/1.jpg" alt="JetBrains 링크 화면">
+    <div class="first">
+        <h2 id="list1">인증 페이지 접속</h2>
+        <ol>
+            <li id="list1.1">JetBrains 사이트 접속
+            <ul>
+                <li>
+                    다음 링크를 통해 JetBrains 사이트에 접속한다.
+                    <p><a href="https://www.jetbrains.com/community/education/#students">https://www.jetbrains.com/community/education/#students</a></p>
+                    <img src="./img/1.jpg" alt="JetBrains 링크 화면">
+                </li>
+                <li>
+                    위와 같은 화면이 나온다. 이후 하단으로 내려가 <strong>"Apply now"</strong>를 클릭한다.
+                    <img src="./img/2.jpg" alt="apply now">
+                </li>
+            </ul>
             </li>
-            <li>
-                위와 같은 화면이 나온다. 이후 하단으로 내려가 <strong>"Apply now"</strong>를 클릭한다.
-                <img src="./img/2.jpg" alt="apply now">
+            <li id="list1.2">정보 입력 및 신청
+            <ul>
+               <li>
+                   인증 화면이 나온다. email 칸에는 학교 이메일 계정을 입력한다.
+                   <img src="./img/3.jpg" alt="학교 인증1">
+               </li>
+                <li>
+                    다음과 같은 화면과 함께 학교 이메일 주소로 인증 메일을 받아볼 수 있다.
+                    <img src="./img/4.jpg" alt="학교 인증2">
+                    <p style="color:red">만약 인증 메일이 보이지 않는다면 학교 이메일 계정이 정확한지 확인해보길 바란다.</p>
+                </li>
+            </ul>
             </li>
-        </ul>
-        </li>
-        <li>정보 입력 및 신청
-        <ul>
-           <li>
-               인증 화면이 나온다. email 칸에는 학교 이메일 계정을 입력한다.
-               <img src="./img/3.jpg" alt="학교 인증1">
+        </ol>
+    </div>
+    <div class="second">
+        <h2 id="list2">학생 인증</h2>
+        <ol>
+           <li id="list2.1">학교 이메일 확인
+           <ul>
+               <li>입력한 학교 이메일 주소에서 인증메일을 확인한다.</li>
+               <li>
+                   <strong>"Confirm Request"</strong>를 클릭한다.
+                   <img src="./img/5.jpg" alt="인증 메일">
+               </li>
+           </ul>
            </li>
-            <li>
-                다음과 같은 화면과 함께 학교 이메일 주소로 인증 메일을 받아볼 수 있다.
-                <img src="./img/4.jpg" alt="학교 인증2">
-                <p style="color:red">만약 인증 메일이 보이지 않는다면 학교 이메일 계정이 정확한지 확인해보길 바란다.</p>
+            <li id="list2.2">JetBrains 최종 인증
+             <ul>
+                 <li>
+                     Account 창이 열리고 하단의 I Accept를 클릭하여 최종 인증한다.
+                     <img src="./img/6.jpg" alt="account창">
+                 </li>
+                 <li>
+                     로그인 후 확인해보면 다음과 같이 라이센스가 발급되어 있는 것을 확인할 수 있다.
+                     <img src="./img/7.jpg" alt="라이센스 발급완료">
+                 </li>
+             </ul>
             </li>
-        </ul>
-        </li>
-    </ol>
-    <h2>학생 인증</h2>
-    <ol>
-       <li>학교 이메일 확인
-       <ul>
-           <li>입력한 학교 이메일 주소에서 인증메일을 확인한다.</li>
-           <li>
-               <strong>"Confirm Request"</strong>를 클릭한다.
-               <img src="./img/5.jpg" alt="인증 메일">
-           </li>
-       </ul>
-       </li>
-        <li>JetBrains 최종 인증
-         <ul>
-             <li>
-                 Account 창이 열리고 하단의 I Accept를 클릭하여 최종 인증한다.
-                 <img src="./img/6.jpg" alt="account창">
-             </li>
-             <li>
-                 로그인 후 확인해보면 다음과 같이 라이센스가 발급되어 있는 것을 확인할 수 있다.
-                 <img src="./img/7.jpg" alt="라이센스 발급완료">
-             </li>
-         </ul>
-        </li>
-    </ol>
-    <h2>다운로드 및 실행</h2>
-    <ol>
-        <li>다운로드 및 실행
-        <ul>
-            <li>
-                다음 링크를 통해 다운로드 페이지에 접속한다.
-                <p><a href="https://www.jetbrains.com/idea/download/#section=windows">https://www.jetbrains.com/idea/download/#section=windows</a></p>
-                <img src="./img/8.jpg" alt="IntelliJ IDEA 다운로드">
+        </ol>
+    </div>
+    <div class="third">
+        <h2 id="list3">다운로드 및 실행</h2>
+        <ol>
+            <li id="list3.1">다운로드 및 실행
+            <ul>
+                <li>
+                    다음 링크를 통해 다운로드 페이지에 접속한다.
+                    <p><a href="https://www.jetbrains.com/idea/download/#section=windows">https://www.jetbrains.com/idea/download/#section=windows</a></p>
+                    <img src="./img/8.jpg" alt="IntelliJ IDEA 다운로드">
+                </li>
+                <li>Ultimate 버전을 다운로드 하여 설치한다. (실행 파일을 설치하는게 편하다.)</li>
+            </ul>
             </li>
-            <li>Ultimate 버전을 다운로드 하여 설치한다. (실행 파일을 설치하는게 편하다.)</li>
-        </ul>
-        </li>
-        <li>실행
-        <ul>
-            <li>
-                실행 후 JetBrains 계정을 등록하면 라이센스가 활성화된다.
-                <img src="./img/9.jpg" alt="실행">
+            <li id="list3.2">실행
+            <ul>
+                <li>
+                    실행 후 JetBrains 계정을 등록하면 라이센스가 활성화된다.
+                    <img src="./img/9.jpg" alt="실행">
+                </li>
+            </ul>
             </li>
-        </ul>
-        </li>
-    </ol>
+        </ol>
+    </div>
 <h3>이렇게하면 졸업년도까지 무료로 IntelliJ를 사용할 수 있다!(매년 계정 연장을 해줘야한다)</h3>
 </section>
 </body>
