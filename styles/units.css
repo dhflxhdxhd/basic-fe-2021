@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    border: 2px solid darkblue;
+    width: 100vw;
+    height: 100vh;
+    background-color: lightblue;
+}
+
+.emWrapper{
+    /*font-size: 12px;*/
+    font-size: 2em; /*부모(상위)의 크기를 기준으로 한다.*/
+}
+
+.inner-emWrapper{
+    font-size: 2em;
+}
