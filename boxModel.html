@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>box model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .box{
+            border: 1px solid red;
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            margin: 10px; /*위 오 아 왼*/
+        }
+        .span-box{
+            display: block; /*span이 div처럼 block을 가지게 됨.*/
+            border: 2px solid blue;
+            /*inline 요소 width, height 동작 X*/
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">box</div>
+<span class="span-box">span box</span>
+</body>
+</html>
