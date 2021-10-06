@@ -5,9 +5,13 @@
     <title>Title</title>
     <style>
         *{
-            margin: 10px 0 0 10px;
+            margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+        body{
+            margin-top: 10px;
+            margin-left: 10px;
         }
         .box{
             background-color: orange;
@@ -17,6 +21,8 @@
             padding-left: 20px;
             padding-right: 20px;
             display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         p{
             font-size: 1.2em;
@@ -24,13 +30,13 @@
             color: white;
         }
         .times{
-            margin-left: auto;
+            /*margin-left: auto;*/
         }
     </style>
 </head>
 <body>
 <div class="box">
-    <p class="hello">Hello Dialog</p>
+    <p>Hello Dialog</p>
     <p class="times">&times;</p>
 </div>
 </body>
