@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        li{
+            flex: 2; /*비율*/
+        }
+        li:first-child{
+            background-color: aliceblue;
+        }
+        li:nth-child(2){
+            background-color: darkslateblue;
+        }
+        li:last-child{
+            order: -1; /*순서 설정*/
+            flex: 4;
+            /*shrink, grow, basis 한 번에 줄 수 있음 -> flex*/
+            /*flex-shrink: ;*/
+            /*flex-grow: ;*/
+            /*flex-basis: ;*/
+            /*margin-left: auto; !*나머지 영역을 margin으로 채우겠다.*!*/
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>license.html</li>
+    <li>shortcut.html</li>
+    <li>else.html</li>
+</ul>
+</body>
+</html>
