@@ -19,14 +19,14 @@
         }
 
         .squares{
-            /*display: flex;*/
+            display: flex;
         }
 
         .square1, .square2, .square3{
             width: 100px;
             height: 100px;
             margin-left: 10px;
-            float: left;
+            /*float: left;*/
         }
 
         .square1{
@@ -37,6 +37,35 @@
         }
         .square3{
             background-color: cornflowerblue;
+        }
+
+        .css-semantic div{
+            background-color: cornflowerblue;
+            margin-top: 5px;
+        }
+
+        .css-header{
+            width: 410px;
+            height: 50px;
+            margin-left: 10px;
+        }
+        .css-section{
+            width: 270px;
+            height: 200px;
+            float: left;
+            margin-left: 10px;
+        }
+        .css-sidebar{
+            width: 130px;
+            height: 200px;
+            margin-left: 10px;
+            float: left;
+        }
+        .css-footer{
+            width: 410px;
+            height: 50px;
+            margin-left: 10px;
+            float: left;
         }
     </style>
 </head>
@@ -67,6 +96,13 @@
         <div class="square1"></div>
         <div class="square2"></div>
         <div class="square3"></div>
+    </div>
+
+    <div class="css-semantic">
+        <div class="css-header">헤더</div>
+        <div class="css-section">본문</div>
+        <div class="css-sidebar">사이드바</div>
+        <div class="css-footer">푸터</div>
     </div>
 </section>
 </body>
