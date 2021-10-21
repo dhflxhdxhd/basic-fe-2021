@@ -17,29 +17,57 @@
             text-decoration: none;
             color: orange;
         }
+
+        .squares{
+            /*display: flex;*/
+        }
+
+        .square1, .square2, .square3{
+            width: 100px;
+            height: 100px;
+            margin-left: 10px;
+            float: left;
+        }
+
+        .square1{
+            background-color: powderblue;
+        }
+        .square2{
+            background-color: lightskyblue;
+        }
+        .square3{
+            background-color: cornflowerblue;
+        }
     </style>
 </head>
 <body>
 <!--html5 semantic tag-->
 <section>
-    <!--img에 figure태그-->
-    <figure>
-        <img src="./img/cl.png" alt="zeno가 아닌 천러">
-        <!--    <figcaption>천러사진</figcaption>-->
-    </figure>
-    <a href="https://www.youtube.com/watch?v=gmS2hPuDNrw">Mark daddy</a>
-    <details>
-        <summary>NCT DREAM</summary>
-        <ul>
-            <li>마크</li>
-            <li>런쥔</li>
-            <li>제노</li>
-            <li>해찬</li>
-            <li>재민</li>
-            <li><mark>천러</mark></li>
-            <li>지성</li>
-        </ul>
-    </details>
+    <div>
+        <!--img에 figure태그-->
+        <figure>
+            <img src="./img/cl.png" alt="zeno가 아닌 천러">
+            <!--    <figcaption>천러사진</figcaption>-->
+        </figure>
+        <a href="https://www.youtube.com/watch?v=gmS2hPuDNrw">Mark daddy</a>
+        <details>
+            <summary>NCT DREAM</summary>
+            <ul>
+                <li>마크</li>
+                <li>런쥔</li>
+                <li>제노</li>
+                <li>해찬</li>
+                <li>재민</li>
+                <li><mark>천러</mark></li>
+                <li>지성</li>
+            </ul>
+        </details>
+    </div>
+    <div class="squares">
+        <div class="square1"></div>
+        <div class="square2"></div>
+        <div class="square3"></div>
+    </div>
 </section>
 </body>
 </html>
