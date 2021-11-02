@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+        .wrapper {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 100px 500px 100px;
+        }
+        header {
+            grid-column: span 2;
+            background-color: #00c73c;
+        }
+        section {
+            background-color: aqua;
+        }
+        aside {
+            background-color: brown;
+        }
+        /*main {*/
+        /*    grid-column: span 2;*/
+        /*    display: ;*/
+        /*}*/
+        footer {
+            grid-column: span 2;
+        }
+        nav ul {
+            display: flex;
+        }
+        h1 {
+            color: blue;
+        }
+        .header {
+            /*color: red;*/
+        }
+        #header {
+            /*color: #00c73c;*/
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="wrapper">
+    <header>
+        <h1 id="header" class="header">logo</h1>
+        <nav>
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>PROJECTS</li>
+                <li>CONTACT</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        section
+    </section>
+    <aside>
+        <img src="./img/me.jpg" alt="김아현">
+    </aside>
+
+    <footer>
+        footer
+    </footer>
+
+</div>
+</body>
+</html
