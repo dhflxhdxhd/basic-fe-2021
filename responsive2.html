@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex-box</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        wrapper{
+            width: 100%;
+            height: 100%;
+        }
+        header{
+            background-color: #066cfa;
+            width: 100%;
+            height: 10vh;
+            border-bottom: 1px solid #000;
+        }
+        content{
+            display: flex;
+        }
+        section{
+            width: 80%;
+            height: 80vh;
+            background-color: #ffd800;
+            padding: 15px;
+        }
+        aside{
+            width: 40%;
+            height: 80vh;
+            background-color: #00ff90;
+            padding: 15px;
+        }
+        footer{
+            width: 100%;
+            height: 10vh;
+            background-color: #c3590a;
+        }
+        @media all and (max-width: 600px){
+            header,footer{
+                width: 100%;
+                height: 10vh;
+            }
+            content{
+                flex-direction: column;
+                width: 100%;
+                height: 80vh;
+            }
+            section{
+                width: 100%;
+                height:50vh ;
+            }
+            aside{
+                width: 100%;
+                height: 30vh;
+            }
+        }
+        @media all and (max-width: 1024px){
+            section{
+                flex-basis: 50%;
+            }
+            aside{
+                flex-basis: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <p>header</p>
+    </header>
+    <content>
+        <section>
+            <p>본문</p>
+        </section>
+        <aside>
+            <p>사이드바</p>
+        </aside>
+    </content>
+    <footer>
+        <p>footer</p>
+    </footer>
+</div>
+</body>
+</html>
