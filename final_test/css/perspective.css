@@ -1,5 +1,16 @@
 @import "index.css";
 
+/*!*요소의 뒷쪽에서 앞면이 보이게할지 정하는 속성*!*/
+/*backface-visibility: visible;*/
+
+/*!*3D를 표현할 때 원근점의 방향 정의 > 기본값 : 50% 50%*!*/
+/*!*perspective-origin : X-axis | y-axis*!*/
+/*!*X-axis : z축의 방향 설정, Y-axis : Y축의 방향 설정*!*/
+/*perspective-origin: 150% 150%;*/
+
+/*!*자식 요소를 3D 공간에 배치할지, 2D평면에 배치할지 지정*!*/
+/*transform-style: preserve-3d;*/
+
 body{
     min-height: 100vh;
     display: flex;
