@@ -1,0 +1,39 @@
+@import "index.css";
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    width: 300px;
+    height: 500px;
+    background-color: #111;
+}
+
+.wrapper .box{
+    width: 100px;
+    height: 100px;
+    background-color: var(--color4);
+    font-size: 3em;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 100px;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+.wrapper:hover .box{
+    transition: 3s;
+    transform: rotateZ(0.5turn);
+}
+
+/*perspective : 크기 | none*/
+/*3차원 변형에서 사용하는 원근감 속성*/
+/*원래 위치에서 사용자 방향으로 잡아당기거나 반대방향으로 밀어 원근감을 갖게함.*/
+/*속성은 0보다 커야하며 값이 클수로 사용자에게서 멀어짐*/
+/*ex) transform : perspective(400px); or perspective(400px);*/
