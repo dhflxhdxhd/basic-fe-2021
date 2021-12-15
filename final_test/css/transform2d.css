@@ -1,0 +1,40 @@
+@import "index.css";
+
+body {
+    /*센터 정렬*/
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111 ;
+}
+
+.wrapper{
+    width: 300px;
+    height: 500px;
+    background-color: var(--color2);
+
+}
+
+.wrapper .box{
+    width: 100px;
+    height: 100px;
+    background-color: var(--color1);
+
+    font-size: 3em;
+    text-transform: uppercase;
+    /*글자 정렬 2가지 방법*/
+    /*1번*/
+    text-align: center;
+    line-height: 100px;
+    /*2번*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+
+}
+
+.wrapper:hover .box{
+    transition: 3s;
+    transform: translate(100px, 200px) scale(2) rotate(0.5turn);
+}
