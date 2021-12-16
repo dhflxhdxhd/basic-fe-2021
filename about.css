@@ -18,7 +18,12 @@
     --color6a: #ff7f5077;
     --color7a: #ffbf0077;
 }
-
+@font-face {
+    font-family: 'HSYuji-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSYuji-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 @font-face {
     font-family: 'KoPubDotumMedium';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/KoPubDotumMedium.woff') format('woff');
@@ -396,7 +401,7 @@ section .PROJECTS  ul li .tool{
 }
 
 .cube:hover{
-    animation: ani 7s linear forwards;
+    animation: ani 7s linear infinite;
 }
 
 @keyframes ani {
@@ -415,12 +420,11 @@ section .PROJECTS  ul li .tool{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--color2);
     padding-right: 10px;
     padding-left: 10px;
-    font-size: 12px;
-    font-family: 'KoPubDotumMedium';
-    font-weight: 700;
+    font-size: 20px;
+    font-family: 'HSYuji-Regular';
+    font-weight: 600;
     letter-spacing: .2em;
 }
 
@@ -428,12 +432,14 @@ section .PROJECTS  ul li .tool{
     background-image: url("https://github.com/dhflxhdxhd/dhflxhdxhd.github.io/blob/main/img/greentable.png?raw=true");
     background-size: 200px 200px;
     transform: translateZ(100px);
+    color: #606060;
 }
 
 .back{
     background-image: url("https://github.com/dhflxhdxhd/dhflxhdxhd.github.io/blob/main/img/LGSI.jpg?raw=true");
     background-size: 200px 200px;
     transform: rotateY(180deg) translateZ(100px);
+    color: #606060;
 }
 
 
@@ -441,11 +447,13 @@ section .PROJECTS  ul li .tool{
     background-image: url("https://github.com/dhflxhdxhd/dhflxhdxhd.github.io/blob/main/img/smartfarm.jpg?raw=true");
     background-size: 200px 200px;
     transform: rotateY(90deg) translateZ(100px);
+    color: whitesmoke;
 }
 
 .left{
     background-image: url("https://github.com/dhflxhdxhd/dhflxhdxhd.github.io/blob/main/img/erdiin.jpg?raw=true");
     background-size: 200px 200px;
     transform: rotateY(-90deg) translateZ(100px);
+    color: #606060;
 }
 
