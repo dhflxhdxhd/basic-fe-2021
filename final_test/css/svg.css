@@ -1,0 +1,51 @@
+@import "index.css";
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    /*background-color: #111;*/
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*position: relative;*/
+}
+
+.wrapper svg{
+    background-color: var(--color7);
+}
+
+.wrapper svg line{
+    animation: 3s line-stroke linear infinite;
+}
+
+@keyframes line-stroke{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    100%{
+        stroke-dashoffset: 200;
+    }
+}
+
+.wrapper svg circle{
+    animation: circle-stroke 3s  linear infinite;
+    /*circle 원점을 기준으로 잡겠다.*/
+    transform-box : fill-box;
+    /*circle 원점 센터를 기준으로 돌겠다.*/
+    transform-origin: center;
+}
+
+@keyframes circle-stroke {
+    100%{
+        transform: rotate(360deg);
+        /*stroke-dashoffset: 300;*/
+    }
+}
