@@ -1,0 +1,186 @@
+@import "setting.css";
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+}
+
+/*I'll be a Front-end developer*/
+.wrapper .title{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.developer{
+    position: absolute;
+    width: 946.17px;
+    height: 67.9px;
+}
+
+.wrapper path{
+    stroke-width: 3;
+    stroke: whitesmoke;
+    animation: animation 10s ease-in infinite,
+    end 0.5s linear forwards ;
+}
+
+@keyframes animation {
+    0%{
+        stroke-dashoffset: 0;
+        stroke-width: 2;
+    }
+    50%{
+        stroke-dashoffset: 200;
+        stroke-width: 2;
+    }
+    100%{
+        stroke-dashoffset: 0;
+        stroke-width: 2;
+    }
+}
+
+@keyframes end {
+    from{
+        fill: var(--color2);
+    }
+    to{
+        fill: var(--color2);
+    }
+}
+
+
+.wrapper path:nth-child(1) {
+    stroke-dasharray: 110;
+    stroke-dashoffset: 110;
+}
+
+.wrapper path:nth-child(2) {
+    stroke-dasharray: 55;
+    stroke-dashoffset: 55;
+}
+
+.wrapper path:nth-child(3),path:nth-child(4) {
+    stroke-dasharray: 114;
+    stroke-dashoffset: 114;
+}
+
+.wrapper path:nth-child(5) {
+    stroke-dasharray: 249;
+    stroke-dashoffset: 249;
+}
+.wrapper path:nth-child(6) {
+    stroke-dasharray: 219;
+    stroke-dashoffset: 219;
+}
+.wrapper path:nth-child(7) {
+    stroke-dasharray: 214;
+    stroke-dashoffset: 214;
+}
+.wrapper path:nth-child(8) {
+    stroke-dasharray: 212;
+    stroke-dashoffset: 212;
+}
+.wrapper path:nth-child(9) {
+    stroke-dasharray: 115;
+    stroke-dashoffset: 115;
+}
+
+.wrapper path:nth-child(10) {
+    stroke-dasharray: 193;
+    stroke-dashoffset: 193;
+}
+.wrapper path:nth-child(11) {
+    stroke-dasharray: 190;
+    stroke-dashoffset: 190;
+}
+.wrapper path:nth-child(12) {
+    stroke-dasharray: 142;
+    stroke-dashoffset: 142;
+}
+.wrapper path:nth-child(13) {
+    stroke-dasharray: 47;
+    stroke-dashoffset: 47;
+}
+.wrapper path:nth-child(14) {
+    stroke-dasharray: 219;
+    stroke-dashoffset: 219;
+}
+.wrapper path:nth-child(15) {
+    stroke-dasharray: 190;
+    stroke-dashoffset: 190;
+}
+.wrapper path:nth-child(16), path:nth-child(17) {
+    stroke-dasharray: 249;
+    stroke-dashoffset: 249;
+}
+.wrapper path:nth-child(18), path:nth-child(20), path:nth-child(24) {
+    stroke-dasharray: 219;
+    stroke-dashoffset: 219;
+}
+.wrapper path:nth-child(19) {
+    stroke-dasharray: 158;
+    stroke-dashoffset: 158;
+}
+.wrapper path:nth-child(21) {
+    stroke-dasharray: 114;
+    stroke-dashoffset: 114;
+}
+.wrapper path:nth-child(22) {
+    stroke-dasharray: 193;
+    stroke-dashoffset: 193;
+}
+.wrapper path:nth-child(23) {
+    stroke-dasharray: 250;
+    stroke-dashoffset: 250;
+}
+.wrapper path:nth-child(25) {
+    stroke-dasharray: 115;
+    stroke-dashoffset: 115;
+}
+.wrapper path:nth-child(26) {
+    stroke-dasharray: 31;
+    stroke-dashoffset: 31;
+}
+
+.wrapper nav{
+    display: flex;
+    justify-content: right;
+    margin-top: 50px;
+}
+
+.wrapper nav ul{
+    display: flex;
+    list-style: none;
+    margin-right: 3%;
+}
+
+.wrapper nav ul li {
+    margin-right: 30px;
+}
+
+ul li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+ul li:hover a{
+    color: var(--color6);
+}
+
+
+
