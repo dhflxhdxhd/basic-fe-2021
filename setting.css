@@ -7,6 +7,22 @@
     --color5: #de3163;
     --color6: #ff7f50;
     --color7: #ffbf00;
+
+    --color1a: #ccccff77;
+    --color2a: #6495ED77;
+    --color3a: #40e0d877;
+    --color4a: #9fe2bf77;
+    --color5a: #de316773;
+    --color6a: #ff7f5077;
+    --color7a: #ffbf0077;
+}
+
+
+@font-face {
+    font-family: 'KoPubDotumMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/KoPubDotumMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 *{
