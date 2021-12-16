@@ -1,12 +1,12 @@
 @charset "utf-8";
 :root {
-    --color1: #ccccff;
-    --color2: #6495ED;
-    --color3: #40e0d8;
-    --color4: #9fe2bf;
-    --color5: #de3163;
-    --color6: #ff7f50;
-    --color7: #ffbf00;
+    --color1: #ccccff55;
+    --color2: #6495ED55;
+    --color3: #40e0d855;
+    --color4: #9fe2bf55;
+    --color5: #de316355;
+    --color6: #ff7f5055;
+    --color7: #ffbf0055;
 }
 
 *{
